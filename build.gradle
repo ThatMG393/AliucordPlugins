@@ -1,0 +1,44 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+import java.util.Locale
+
+plugins {
+    id 'com.android.library' version '8.0.2' apply false
+    id 'com.aliucord.gradle' version 'main-SNAPSHOT' apply false
+}
+
+subprojects {
+	println(" Configuring ${project.name}")
+	apply plugin: "com.android.library"
+	apply plugin: "com.aliucord.gradle"
+	
+	aliucord {
+   	 author("ThatMG393", 123456789L)
+  	  updateUrl = "https://raw.githubusercontent.com/ThatMG393/AliucordPlugins/builds/updater.json"
+  	  buildUrl = "https://raw.githubusercontent.com/ThatMG393/AliucordPlugins/builds/%s.zip"
+	}
+		
+	android {
+		// doesnt work when project name is not the same as the namespace
+		namespace "com.thatmg393.${project.name.toLowerCase(Locale.getDefault())}"
+		compileSdk 31
+		buildToolsVersion '33.0.1'
+
+    	defaultConfig {
+   		 minSdk 24
+  		  targetSdk 31
+   	 }
+	
+   	 compileOptions {
+     	   sourceCompatibility = JavaVersion.VERSION_11
+     	   targetCompatibility = JavaVersion.VERSION_11
+   	 }
+	}
+	
+    dependencies {
+		discord 'com.discord:discord:aliucord-SNAPSHOT'
+		implementation "com.aliucord:Aliucord:main-SNAPSHOT"
+		
+        implementation "androidx.appcompat:appcompat:1.7.0-alpha02"
+    	implementation "com.google.android.material:material:1.9.0"
+    }
+}

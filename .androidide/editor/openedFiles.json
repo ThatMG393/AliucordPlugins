@@ -1,0 +1,20 @@
+{
+  "allFiles": [
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/AliucordPlugins/build.gradle",
+      "selection": {
+        "end": {
+          "column": 4,
+          "index": -1,
+          "line": 20
+        },
+        "start": {
+          "column": 4,
+          "index": -1,
+          "line": 20
+        }
+      }
+    }
+  ],
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/AliucordPlugins/build.gradle"
+}
