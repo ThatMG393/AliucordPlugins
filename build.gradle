@@ -2,7 +2,7 @@
 import java.util.Locale
 
 plugins {
-    id 'com.android.library' version '8.0.2' apply false
+    id 'com.android.library' version '7.0.4' apply false
     id 'com.aliucord.gradle' version 'main-SNAPSHOT' apply false
 }
 
@@ -29,8 +29,8 @@ subprojects {
    	 }
 	
    	 compileOptions {
-     	   sourceCompatibility = JavaVersion.VERSION_11
-     	   targetCompatibility = JavaVersion.VERSION_11
+     	   sourceCompatibility JavaVersion.VERSION_11
+     	   targetCompatibility JavaVersion.VERSION_11
    	 }
 	}
 	

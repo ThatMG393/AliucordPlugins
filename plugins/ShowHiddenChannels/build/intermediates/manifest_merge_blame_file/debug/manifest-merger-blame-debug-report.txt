@@ -2,7 +2,10 @@
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.thatmg393.showhiddenchannels" >
 4
-5    <uses-sdk android:minSdkVersion="24" />
-5-->/storage/emulated/0/AndroidIDEProjects/AliucordPlugins/plugins/ShowHiddenChannels/src/main/AndroidManifest.xml
-6
-7</manifest>
+5    <uses-sdk
+6        android:minSdkVersion="24"
+6-->/storage/emulated/0/AndroidIDEProjects/AliucordPlugins/plugins/ShowHiddenChannels/src/main/AndroidManifest.xml
+7        android:targetSdkVersion="33" />
+7-->/storage/emulated/0/AndroidIDEProjects/AliucordPlugins/plugins/ShowHiddenChannels/src/main/AndroidManifest.xml
+8
+9</manifest>
