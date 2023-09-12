@@ -20,12 +20,12 @@ subprojects {
 	android {
 		// doesnt work when project name is not the same as the namespace
 		namespace "com.thatmg393.${project.name.toLowerCase(Locale.getDefault())}"
-		compileSdk 31
+		compileSdk 33
 		buildToolsVersion '33.0.1'
 
     	defaultConfig {
    		 minSdk 24
-  		  targetSdk 31
+  		  targetSdk 33
    	 }
 	
    	 compileOptions {
